@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b20">
+  <meta name="description" content="Discover Four Seasons Restaurant in Kankarbagh, Patna. Explore a sample menu, view food photos, find directions and enquire about a table or takeaway.">
+  <meta property="og:title" content="Four Seasons Restaurant | Kankarbagh, Patna">
+  <meta property="og:description" content="Good food, warm moments. Explore Four Seasons Restaurant, Kankarbagh, Patna.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/restaurant-interior.webp">
+  <title>Four Seasons Restaurant | Kankarbagh, Patna</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Four Seasons Restaurant",
+    "telephone": "+91-76314-15151",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "O/86, Doctor's Colony, opposite Ramashray Singh Park, Kankarbagh",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "postalCode": "800020",
+      "addressCountry": "IN"
+    },
+    "servesCuisine": ["Chinese", "Indian", "Street Food", "Rolls"],
+    "hasMap": "https://maps.app.goo.gl/oHEJnQpP2f5yftLQ6"
+  }
+  </script>
+  <style>
+    :root{
+      --forest:#102b20;--forest2:#183c2c;--gold:#d6ad62;--gold2:#efc978;
+      --cream:#faf7ef;--paper:#fffefa;--ink:#1c251f;--muted:#72796f;
+      --line:#e9e2d5;--shadow:0 14px 36px rgba(31,37,29,.10);
+      --serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans)}
+    body.nav-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1180px,91%);margin:0 auto}
+    .topline{background:#0a1f17;color:#eae3d5;font-size:11px;letter-spacing:.3px}
+    .topline-inner{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .topline a:hover{color:var(--gold2)}
+    .site-header{height:78px;position:sticky;top:0;z-index:50;background:rgba(250,247,239,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:max-content}
+    .brand-mark{height:44px;width:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:#a77d36;font:700 25px var(--serif)}
+    .brand-name{font:700 22px/1.05 var(--serif);letter-spacing:.1px}
+    .brand-sub{font-size:9px;letter-spacing:4px;color:var(--muted);margin-top:5px}
+    .nav-links{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:700;color:#4d574e}
+    .nav-links a{padding:10px 0;position:relative}
+    .nav-links a:hover,.nav-links a.active{color:#a67a32}
+    .nav-links a.active:after{content:"";height:2px;background:var(--gold);position:absolute;left:0;right:0;bottom:2px}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--gold);background:var(--gold);color:#17271e;padding:13px 19px;font-size:11px;font-weight:800;letter-spacing:.7px;transition:.2s;cursor:pointer}
+    .nav-cta{border-radius:30px;white-space:nowrap}
+    .nav-cta:hover,.button:hover{background:var(--gold2);transform:translateY(-1px)}
+    .menu-toggle{display:none;border:1px solid var(--line);background:transparent;border-radius:8px;width:42px;height:42px;font-size:22px;color:var(--forest)}
+    .hero{min-height:590px;display:flex;align-items:center;position:relative;color:white;background:
+      linear-gradient(90deg,rgba(6,22,15,.88) 0%,rgba(6,22,15,.66) 48%,rgba(6,22,15,.12) 100%),
+      url("assets/restaurant-interior.webp") center 52%/cover no-repeat}
+    .hero-inner{padding:90px 0 100px}
+    .eyebrow{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+    .hero h1{font:700 clamp(50px,7vw,82px)/1.03 var(--serif);max-width:720px;margin:20px 0 17px}
+    .hero h1 span{color:var(--gold2)}
+    .hero p{max-width:540px;color:#e3e8e1;font-size:15px;line-height:1.85;margin:0}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}
+    .button-outline{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+    .button-outline:hover{background:white;color:var(--forest)}
+    .hero-location{display:flex;align-items:center;gap:8px;color:#e2e7df;font-size:12px;margin-top:36px}
+    .hero-location svg{width:16px;height:16px;color:var(--gold)}
+    .trust-strip{background:var(--forest);color:white}
+    .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+    .trust-item{padding:19px 12px;border-right:1px solid rgba(255,255,255,.12)}
+    .trust-item:last-child{border:0}
+    .trust-item strong{display:block;font:600 16px var(--serif);color:var(--gold2);margin-bottom:4px}
+    .trust-item span{font-size:10px;color:#d0d8d0;letter-spacing:1px;text-transform:uppercase}
+    .section{padding:90px 0}
+    .section-heading{text-align:center;max-width:720px;margin:0 auto 38px}
+    .section-heading h2{font:700 clamp(34px,4vw,48px)/1.12 var(--serif);margin:12px 0}
+    .section-heading p{font-size:14px;color:var(--muted);line-height:1.8;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}
+    .about-photo{position:relative}
+    .about-photo img{width:100%;height:420px;object-fit:cover;border-radius:4px;box-shadow:var(--shadow)}
+    .photo-caption{position:absolute;right:-17px;bottom:22px;background:var(--gold);color:#1c2a20;padding:15px 19px;font:600 17px var(--serif);box-shadow:var(--shadow)}
+    .about-copy h2{font:700 clamp(34px,4vw,46px)/1.12 var(--serif);margin:14px 0}
+    .about-copy p{font-size:14px;line-height:1.9;color:var(--muted)}
+    .about-points{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:24px 0}
+    .point{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;color:#435047}
+    .point i{width:28px;height:28px;border-radius:50%;background:#e9dfc9;color:#94713d;display:grid;place-items:center;font-style:normal}
+    .menu-section{background:#f0eadf}
+    .menu-section .section-heading{margin-bottom:22px}
+    .menu-notice{max-width:760px;margin:0 auto 22px;padding:11px 15px;border:1px solid #e1d4bd;background:#f9f4e9;text-align:center;color:#6d624d;font-size:11px;line-height:1.6}
+    .filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:26px auto 30px}
+    .filter-btn{border:1px solid #bfc9be;background:transparent;color:var(--forest);border-radius:25px;padding:10px 16px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s}
+    .filter-btn:hover,.filter-btn[aria-pressed="true"]{background:var(--forest);color:var(--gold2);border-color:var(--forest)}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .menu-card{min-width:0;background:var(--paper);border-radius:13px;overflow:hidden;box-shadow:0 5px 17px rgba(33,38,28,.07);transition:transform .22s,box-shadow .22s}
+    .menu-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .menu-card[hidden]{display:none!important}
+    .food-photo{height:205px;position:relative;background:#e4dfd4;overflow:hidden}
+    .food-photo img{position:absolute;height:300%;width:300%;max-width:none;object-fit:fill;left:calc(var(--tile-x,0)*-100%);top:calc(var(--tile-y,0)*-100%);transition:filter .45s}
+    .menu-card:hover .food-photo img{filter:saturate(1.12)}
+    .dish-tag{position:absolute;top:12px;left:12px;background:#176443;color:white;border-radius:20px;padding:6px 10px;font-size:9px;font-weight:800;letter-spacing:.5px}
+    .dish-tag.gold{background:var(--gold);color:#1c2a20}
+    .dish-info{padding:16px 17px 17px}
+    .dish-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .dish-info h3{font:700 19px/1.2 var(--serif);margin:0 0 7px}
+    .dish-price{font-size:14px;color:#a85d1b;font-weight:800;white-space:nowrap}
+    .dish-info p{font-size:11px;color:var(--muted);line-height:1.6;margin:0;min-height:36px}
+    .menu-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:13px;padding-top:11px;border-top:1px solid #eee8de}
+    .dish-category{font-size:9px;font-weight:800;letter-spacing:1px;color:#778177;text-transform:uppercase}
+    .order-link{font-size:10px;font-weight:800;color:var(--forest);border:1px solid #c5d0c5;border-radius:20px;padding:7px 11px}
+    .order-link:hover{background:var(--forest);color:white}
+    .menu-empty{display:none;text-align:center;padding:35px;color:var(--muted);grid-column:1/-1}
+    .menu-footer{text-align:center;margin-top:30px}
+    .menu-footer p{font-size:10px;color:#817969;margin:0 0 16px}
+    .experience{background:var(--forest);color:white}
+    .experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+    .experience-photo img{width:100%;height:430px;object-fit:cover}
+    .experience-copy h2{font:700 clamp(36px,4vw,48px)/1.12 var(--serif);margin:13px 0}
+    .experience-copy p{font-size:14px;line-height:1.9;color:#c7d0c7}
+    .experience-points{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin:26px 0}
+    .experience-point{border-top:1px solid rgba(255,255,255,.2);padding-top:12px}
+    .experience-point strong{display:block;color:var(--gold2);font:600 17px var(--serif);margin-bottom:5px}
+    .experience-point span{font-size:11px;color:#c2ccc2}
+    .gallery-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:340px;gap:12px}
+    .gallery-grid img{width:100%;height:100%;object-fit:cover}
+    .gallery-grid img{border-radius:4px}.gallery-grid img:first-child{grid-row:auto}
+    .booking-section{background:#f0eadf}
+    .booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:start}
+    .booking-copy h2{font:700 clamp(35px,4vw,46px)/1.12 var(--serif);margin:13px 0}
+    .booking-copy>p{font-size:14px;line-height:1.85;color:var(--muted)}
+    .contact-list{display:grid;gap:17px;margin-top:25px}
+    .contact-line{display:flex;align-items:flex-start;gap:12px;font-size:12px;line-height:1.55;color:#5d665e}
+    .contact-icon{width:32px;height:32px;flex:none;display:grid;place-items:center;border-radius:50%;background:#e3d6bb;color:#7d602f}
+    .contact-line strong{display:block;color:var(--ink);font-size:12px;margin-bottom:3px}
+    .booking-form{background:white;padding:27px;border-radius:5px;box-shadow:var(--shadow)}
+    .booking-form h3{font:600 25px var(--serif);margin:0 0 18px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    .field{margin-bottom:13px}
+    .field label{display:block;font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#6e766d;margin-bottom:7px}
+    .field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #e4e0d7;background:#fffefa;border-radius:3px;font-size:12px;color:var(--ink);outline:none}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+    .field textarea{min-height:80px;resize:vertical}
+    .submit-button{width:100%;border:0;border-radius:3px}
+    .form-disclaimer{font-size:9px!important;line-height:1.5!important;text-align:center;color:#85877e!important;margin:11px 0 0!important}
+    .map-section{padding:86px 0}
+    .map-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+    .map-copy h2{font:700 40px/1.12 var(--serif);margin:13px 0}
+    .map-copy p{color:var(--muted);font-size:13px;line-height:1.8}
+    .map-address{font-size:12px;line-height:1.7;margin:18px 0;color:#4f5a51}
+    .map-frame{border:0;width:100%;height:355px;box-shadow:var(--shadow);background:#e2e3dc}
+    footer{background:#091d14;color:#c8d2c8;padding:34px 0}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+    .footer-brand{font:700 22px var(--serif);color:white}
+    .footer-caption{font-size:10px;color:#aeb9ae;margin-top:5px}
+    .footer-links{display:flex;gap:17px;font-size:11px}
+    .footer-links a:hover{color:var(--gold2)}
+    .footer-copy{font-size:10px;color:#9ea99e}
+    .floating-wa{position:fixed;right:20px;bottom:20px;z-index:60;width:54px;height:54px;border-radius:50%;background:#20a565;color:white;display:grid;place-items:center;box-shadow:0 7px 23px #0004}
+    .floating-wa svg{width:27px;height:27px;fill:currentColor}
+    .mobile-order{display:none}
+    @media(max-width:950px){
+      .nav-links{gap:15px;font-size:11px}
+      .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .about-grid,.experience-grid,.booking-grid,.map-grid{gap:35px}
+    }
+    @media(max-width:760px){
+      html{scroll-padding-top:75px}
+      .site-header{height:70px}
+      .brand-mark{height:39px;width:39px}
+      .brand-name{font-size:20px}
+      .menu-toggle{display:block}
+      .nav-cta{display:none}
+      .nav-links{display:none;position:fixed;top:104px;left:0;right:0;bottom:0;overflow:auto;background:var(--cream);padding:28px 7%;flex-direction:column;align-items:flex-start;gap:17px;font-size:16px}
+      .nav-links.open{display:flex}
+      .topline-inner{justify-content:center;min-height:31px}
+      .topline-inner span:first-child{display:none}
+      .hero{min-height:560px;background-position:58% center}
+      .hero-inner{padding:78px 0}
+      .hero h1{font-size:clamp(47px,12vw,68px)}
+      .trust-item{padding:16px 7px}
+      .trust-item strong{font-size:14px}
+      .trust-item span{font-size:8px;letter-spacing:.5px}
+      .section{padding:70px 0}
+      .about-grid,.experience-grid,.booking-grid,.map-grid{grid-template-columns:1fr}
+      .about-photo img{height:330px}
+      .photo-caption{right:0}
+      .about-copy{order:-1}
+      .experience-photo img{height:320px}
+      .booking-form{padding:21px}
+      .map-frame{height:320px}
+    }
+    @media(max-width:520px){
+      .container{width:90%}
+      .hero{min-height:520px}
+      .hero p{font-size:13px}
+      .hero-actions .button{width:100%}
+      .trust-grid{grid-template-columns:1fr 1fr}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item:last-child{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12)}
+      .menu-grid{grid-template-columns:1fr}
+      .food-photo{height:225px}
+      .filters{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:3px 1px 10px;scrollbar-width:thin}
+      .filter-btn{white-space:nowrap}
+      .about-points,.experience-points{grid-template-columns:1fr 1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:150px 150px 150px}
+      .gallery-grid img:first-child{grid-column:span 2;grid-row:auto}
+      .form-row{grid-template-columns:1fr;gap:0}
+      .footer-row{flex-direction:column;align-items:flex-start}
+      .footer-links{flex-wrap:wrap}
+      .floating-wa{right:15px;bottom:15px;width:49px;height:49px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <span>Doctor's Colony · Kankarbagh · Patna, Bihar</span>
+      <span>Call us: <a href="tel:+917631415151">+91 76314 15151</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Four Seasons Restaurant home">
+        <span class="brand-mark">F</span>
+        <span><span class="brand-name">Four Seasons</span><span class="brand-sub">RESTAURANT</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a><a href="#booking">Reservation</a><a href="#location">Location</a>
+      </div>
+      <a class="nav-cta" href="#booking">ENQUIRE NOW <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="eyebrow">A little flavour. A lot of happiness.</div>
+        <h1>Good food.<br><span>Great moments.</span></h1>
+        <p>Make room for good food and good company at Four Seasons Restaurant. Drop in for a relaxed meal, explore our menu, or get in touch to plan your visit.</p>
+        <div class="hero-actions">
+          <a class="button" href="#menu">EXPLORE THE MENU</a>
+          <a class="button button-outline" href="#booking">BOOK / ENQUIRE</a>
+        </div>
+        <div class="hero-location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          O/86, Doctor's Colony, Kankarbagh, Patna
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="Restaurant highlights">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>Multi-cuisine</strong><span>Something for every craving</span></div>
+        <div class="trust-item"><strong>Dine-in & takeaway</strong><span>Plan your meal your way</span></div>
+        <div class="trust-item"><strong>Easy to find</strong><span>Located in Kankarbagh, Patna</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="assets/restaurant-interior.webp" alt="Illustrative warm restaurant dining room with tables and ambient lighting" loading="lazy">
+          <div class="photo-caption">Come as you are. Enjoy every bite.</div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">Welcome to Four Seasons</div>
+          <h2>Every meal is better when shared.</h2>
+          <p>Four Seasons is a neighbourhood restaurant in Doctor's Colony, Kankarbagh, Patna. This website is designed to help guests discover the restaurant, browse a sample menu, find directions and contact the team.</p>
+          <p>Browse the dishes below as a sample showcase. Please confirm the current menu, prices and availability with the restaurant before ordering.</p>
+          <div class="about-points">
+            <div class="point"><i>✦</i> Multi-cuisine selection</div>
+            <div class="point"><i>⌖</i> Kankarbagh location</div>
+            <div class="point"><i>☏</i> Direct phone contact</div>
+            <div class="point"><i>↗</i> WhatsApp enquiries</div>
+          </div>
+          <a class="button" href="#location">FIND THE RESTAURANT</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Fresh cravings start here</div>
+          <h2>Explore our menu</h2>
+          <p>Browse a selection of sample dishes. Tap a category to filter the menu.</p>
+        </div>
+        <div class="menu-notice"><strong>Sample menu:</strong> Dish names and prices below are placeholders for website preview. Replace them with Four Seasons' confirmed menu and current prices before publishing.</div>
+        <div class="filters" id="menuFilters" aria-label="Filter menu categories">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">✦ All items</button>
+          <button class="filter-btn" type="button" data-filter="starters" aria-pressed="false">Starters</button>
+          <button class="filter-btn" type="button" data-filter="indian" aria-pressed="false">Indian</button>
+          <button class="filter-btn" type="button" data-filter="chinese" aria-pressed="false">Chinese</button>
+          <button class="filter-btn" type="button" data-filter="rolls" aria-pressed="false">Rolls</button>
+          <button class="filter-btn" type="button" data-filter="rice" aria-pressed="false">Rice & Biryani</button>
+          <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false">Desserts</button>
+          <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="starters">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:0;--tile-y:0" alt="Paneer tikka with charred edges, onion and lemon" loading="lazy"><span class="dish-tag">Popular pick</span></div>
+            <div class="dish-info"><div class="dish-top"><h3>Paneer Tikka</h3><span class="dish-price">₹249</span></div><p>Paneer cubes marinated with spices and grilled until smoky.</p><div class="menu-bottom"><span class="dish-category">Starter · Veg</span><a class="order-link" href="#booking" data-dish="Paneer Tikka">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="starters chinese">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:1;--tile-y:0" alt="Chilli chicken with peppers and spring onion" loading="lazy"><span class="dish-tag gold">House favourite</span></div>
+            <div class="dish-info"><div class="dish-top"><h3>Chilli Chicken</h3><span class="dish-price">₹289</span></div><p>Indo-Chinese style chicken tossed with peppers and a savoury chilli sauce.</p><div class="menu-bottom"><span class="dish-category">Starter · Non-veg</span><a class="order-link" href="#booking" data-dish="Chilli Chicken">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="rice">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:2;--tile-y:0" alt="Chicken biryani with fragrant rice and herbs" loading="lazy"></div>
+            <div class="dish-info"><div class="dish-top"><h3>Chicken Biryani</h3><span class="dish-price">₹299</span></div><p>Fragrant basmati rice layered with chicken and aromatic spices.</p><div class="menu-bottom"><span class="dish-category">Rice · Non-veg</span><a class="order-link" href="#booking" data-dish="Chicken Biryani">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="indian">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:0;--tile-y:1" alt="Paneer butter masala in creamy orange gravy" loading="lazy"></div>
+            <div class="dish-info"><div class="dish-top"><h3>Paneer Butter Masala</h3><span class="dish-price">₹269</span></div><p>Soft paneer in a rich tomato, butter and cream gravy.</p><div class="menu-bottom"><span class="dish-category">Main course · Veg</span><a class="order-link" href="#booking" data-dish="Paneer Butter Masala">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="chinese">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:1;--tile-y:1" alt="Vegetable hakka noodles with fresh vegetables" loading="lazy"></div>
+            <div class="dish-info"><div class="dish-top"><h3>Veg Hakka Noodles</h3><span class="dish-price">₹189</span></div><p>Wok-tossed noodles with crunchy seasonal vegetables.</p><div class="menu-bottom"><span class="dish-category">Chinese · Veg</span><a class="order-link" href="#booking" data-dish="Veg Hakka Noodles">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="starters">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:2;--tile-y:1" alt="Tandoori chicken with herbs and lemon" loading="lazy"><span class="dish-tag">Chef's choice</span></div>
+            <div class="dish-info"><div class="dish-top"><h3>Tandoori Chicken</h3><span class="dish-price">₹399</span></div><p>Chicken marinated with traditional spices and roasted tandoori-style.</p><div class="menu-bottom"><span class="dish-category">Starter · Non-veg</span><a class="order-link" href="#booking" data-dish="Tandoori Chicken">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="indian">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:0;--tile-y:2" alt="Dal makhani finished with cream and coriander" loading="lazy"></div>
+            <div class="dish-info"><div class="dish-top"><h3>Dal Makhani</h3><span class="dish-price">₹229</span></div><p>Slow-cooked black lentils finished with butter and cream.</p><div class="menu-bottom"><span class="dish-category">Main course · Veg</span><a class="order-link" href="#booking" data-dish="Dal Makhani">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="desserts">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:1;--tile-y:2" alt="Gulab jamun in sugar syrup with pistachio" loading="lazy"><span class="dish-tag gold">Sweet ending</span></div>
+            <div class="dish-info"><div class="dish-top"><h3>Gulab Jamun</h3><span class="dish-price">₹99</span></div><p>Soft milk dumplings soaked in fragrant sugar syrup.</p><div class="menu-bottom"><span class="dish-category">Dessert</span><a class="order-link" href="#booking" data-dish="Gulab Jamun">Enquire ↗</a></div></div>
+          </article>
+          <article class="menu-card" data-category="drinks">
+            <div class="food-photo"><img src="assets/menu-grid.webp" style="--tile-x:2;--tile-y:2" alt="Masala chai served in a traditional clay cup" loading="lazy"></div>
+            <div class="dish-info"><div class="dish-top"><h3>Masala Chai</h3><span class="dish-price">₹49</span></div><p>Comforting tea brewed with milk and aromatic spices.</p><div class="menu-bottom"><span class="dish-category">Beverage</span><a class="order-link" href="#booking" data-dish="Masala Chai">Enquire ↗</a></div></div>
+          </article>
+        </div>
+        <div class="menu-empty" id="menuEmpty">No dishes in this category yet.</div>
+        <div class="menu-footer">
+          <p>Photos are illustrative sample food images, not verified photographs of the restaurant's served dishes.</p>
+          <a class="button" href="#booking">ASK ABOUT THE MENU</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container experience-grid">
+        <div class="experience-photo"><img src="assets/restaurant-interior.webp" alt="Illustrative restaurant seating and warm ambient lighting" loading="lazy"></div>
+        <div class="experience-copy">
+          <div class="eyebrow">Good food brings us together</div>
+          <h2>Make time for a table full of memories.</h2>
+          <p>Planning a casual meal, a family outing or a get-together? Contact Four Seasons directly to ask about table availability, group visits and takeaway options.</p>
+          <div class="experience-points">
+            <div class="experience-point"><strong>Dine-in</strong><span>Visit the restaurant in Kankarbagh.</span></div>
+            <div class="experience-point"><strong>Takeaway</strong><span>Call to ask about pickup options.</span></div>
+            <div class="experience-point"><strong>Reservations</strong><span>Send a table enquiry in advance.</span></div>
+            <div class="experience-point"><strong>Menu enquiries</strong><span>Check today's dishes and prices.</span></div>
+          </div>
+          <a class="button" href="#booking">PLAN YOUR VISIT</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">A little preview</div>
+          <h2>Food, flavour & atmosphere</h2>
+          <p>Illustrative food and dining imagery for this website preview. Replace with genuine restaurant photographs for the public business listing.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="assets/restaurant-interior.webp" alt="Illustrative restaurant interior" loading="lazy">
+          <img src="assets/menu-grid.webp" alt="Illustrative collage of sample restaurant dishes" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <div class="eyebrow">Let's get your visit started</div>
+          <h2>Reserve a table or ask about takeaway.</h2>
+          <p>Share your details below. The form opens WhatsApp with your enquiry so the restaurant can confirm availability and next steps directly.</p>
+          <div class="contact-list">
+            <div class="contact-line"><span class="contact-icon">☎</span><span><strong>Call Four Seasons</strong><a href="tel:+917631415151">+91 76314 15151</a></span></div>
+            <div class="contact-line"><span class="contact-icon">⌖</span><span><strong>Visit us</strong>O/86, Doctor's Colony, opposite Ramashray Singh Park, Kankarbagh, Patna, Bihar 800020</span></div>
+            <div class="contact-line"><span class="contact-icon">◉</span><span><strong>WhatsApp enquiries</strong><a href="https://wa.me/917631415151" target="_blank" rel="noopener">Message the restaurant</a></span></div>
+          </div>
+        </div>
+        <form class="booking-form" id="enquiryForm">
+          <h3>Send an enquiry</h3>
+          <div class="field"><label for="enquiryType">I would like to</label><select id="enquiryType"><option>Reserve a table</option><option>Ask about takeaway</option><option>Ask about the menu</option><option>Plan a group visit</option></select></div>
+          <div class="form-row">
+            <div class="field"><label for="guestName">Your name</label><input id="guestName" name="name" required placeholder="Full name"></div>
+            <div class="field"><label for="guestPhone">Mobile number</label><input id="guestPhone" name="phone" type="tel" required placeholder="Your number"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="visitDate">Preferred date</label><input id="visitDate" name="date" type="date"></div>
+            <div class="field"><label for="visitTime">Preferred time</label><input id="visitTime" name="time" type="time"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="partySize">Guests / quantity</label><select id="partySize"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+            <div class="field"><label for="dishChoice">Dish (optional)</label><input id="dishChoice" placeholder="Dish or request"></div>
+          </div>
+          <div class="field"><label for="extraMessage">Message</label><textarea id="extraMessage" placeholder="Add any other details..."></textarea></div>
+          <button class="button submit-button" type="submit">CONTINUE ON WHATSAPP ↗</button>
+          <p class="form-disclaimer">This is an enquiry only. A table or order is confirmed only after the restaurant replies. No online payment is collected on this website.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section" id="location">
+      <div class="container map-grid">
+        <div class="map-copy">
+          <div class="eyebrow">Find Four Seasons</div>
+          <h2>See you in Kankarbagh.</h2>
+          <p>Use Google Maps to navigate to the restaurant's listing and check the latest directions.</p>
+          <div class="map-address"><strong>Four Seasons Restaurant</strong><br>O/86, Doctor's Colony, opposite Ramashray Singh Park, Kankarbagh, Patna, Bihar 800020</div>
+          <a class="button" href="https://maps.app.goo.gl/oHEJnQpP2f5yftLQ6" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS ↗</a>
+        </div>
+        <iframe class="map-frame" title="Map showing Four Seasons Restaurant in Kankarbagh, Patna" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Four%20Seasons%20Restaurant%2C%20O%2F86%20Doctor%27s%20Colony%2C%20Kankarbagh%2C%20Patna%2C%20Bihar%20800020&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div><div class="footer-brand">Four Seasons</div><div class="footer-caption">RESTAURANT · KANKARBAGH, PATNA</div></div>
+      <div class="footer-links"><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#booking">Enquiry</a><a href="#location">Location</a></div>
+      <div class="footer-copy">© <span id="year"></span> Four Seasons Restaurant</div>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/917631415151" target="_blank" rel="noopener" aria-label="Chat with Four Seasons on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.8 11.8 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.4 4.7Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.2-.2.3-.4.5-.6.1-.2.2-.3.3-.6.1-.2 0-.4 0-.6s-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.6.8.2 1.5.2 2.1.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4Z"/></svg>
+  </a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      menuToggle.textContent = isOpen ? "×" : "☰";
+      document.body.classList.toggle("nav-open", isOpen);
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      menuToggle.textContent = "☰";
+      document.body.classList.remove("nav-open");
+    }));
+
+    // Menu filters: the [hidden] CSS rule ensures filtered cards disappear in every browser.
+    const filterButtons = [...document.querySelectorAll("[data-filter]")];
+    const menuCards = [...document.querySelectorAll(".menu-card")];
+    const menuEmpty = document.getElementById("menuEmpty");
+    filterButtons.forEach(button => button.addEventListener("click", () => {
+      const category = button.dataset.filter;
+      filterButtons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+      let visibleCount = 0;
+      menuCards.forEach(card => {
+        const categories = card.dataset.category.split(/\s+/);
+        const show = category === "all" || categories.includes(category);
+        card.hidden = !show;
+        if (show) visibleCount += 1;
+      });
+      menuEmpty.style.display = visibleCount ? "none" : "block";
+    }));
+
+    // Fill the enquiry with a chosen menu item when a card's Enquire link is clicked.
+    document.querySelectorAll("[data-dish]").forEach(link => link.addEventListener("click", () => {
+      document.getElementById("dishChoice").value = link.dataset.dish;
+      document.getElementById("enquiryType").value = "Ask about the menu";
+    }));
+
+    // WhatsApp enquiry form
+    document.getElementById("enquiryForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const get = id => document.getElementById(id).value.trim();
+      const message = [
+        "Hello Four Seasons Restaurant, I would like to make an enquiry.",
+        "Request: " + get("enquiryType"),
+        "Name: " + get("guestName"),
+        "Mobile: " + get("guestPhone"),
+        "Preferred date: " + (get("visitDate") || "Not specified"),
+        "Preferred time: " + (get("visitTime") || "Not specified"),
+        "Guests / quantity: " + get("partySize"),
+        "Dish / request: " + (get("dishChoice") || "Not specified"),
+        "Message: " + (get("extraMessage") || "None")
+      ].join("\n");
+      window.open("https://wa.me/917631415151?text=" + encodeURIComponent(message), "_blank", "noopener");
+    });
+
+    document.getElementById("visitDate").min = new Date().toISOString().slice(0, 10);
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
